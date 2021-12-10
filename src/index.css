@@ -2,13 +2,20 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: sans-serif;
-    background-image: url("./assets/backgrounds/2020-dodge-challenger-77-b77b467,0,0,0,0.jpg");
-    background-repeat: no-repeat ;
-    background-size: 100%;
+body {
+    background: url("https://i.wpimg.pl/730x0/m.autokult.pl/2020-dodge-challenger-77-b77b467.jpg");
+    background-size: cover;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    margin: 0;
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
