@@ -23,7 +23,7 @@ export default function ChooseRepair() {
           onChange={handleChange}>
           <MenuItem value={0}>Breaks</MenuItem>
           <MenuItem value={1}>Change Oil + Filters</MenuItem>
-          <MenuItem value={2}>Diagnosiss</MenuItem>
+          <MenuItem value={2}>Diagnosis</MenuItem>
           <MenuItem value={3}>Change Tire</MenuItem>
           <MenuItem value={4}>Change Break Oil</MenuItem>
         </Select>

@@ -2,8 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import './Questionaire.css';
-import ChooseService from './ChooseService';
-import ChooseRepair from './ChooseRepair';
+import ChooseService from '../ChooseService/chooseService';
+import ChooseRepair from '../ChooseRepair/chooseRepair';
 import Button from '@mui/material/Button';
 // import CarDate from './ChooseYear';
 
