@@ -52,7 +52,7 @@ const SignupSchema = Yup.object().shape({
   position: Yup.string().required('Required')
 });
 
-const FullForm: React.FC = () => {
+const ApplicationForm: React.FC = () => {
   const handleSubmit = (values: FormValues): void => {
     alert(JSON.stringify(values));
   };
@@ -100,4 +100,4 @@ const FullForm: React.FC = () => {
   );
 };
 
-export default FullForm;
+export default ApplicationForm;
