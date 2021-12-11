@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-const div = styled.div`
-  width: 100%;
+const Container = styled.div`
+  body {
+    height: 100%;
+  }
 `;
-
-export default div;
+export default Container;
