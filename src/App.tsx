@@ -1,14 +1,16 @@
 import React from 'react';
-import FullFrom from './app/components/App/FullForm';
+import FullFrom from './app/components/ApplicationForm/ApplicationForm';
 import Menu from './app/components/Menu/menu';
-import div from './app_style';
+import Container from './app_style';
+import renderService from './app/components/ServiceList/get_service';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <Container>
+      <renderService />
       <Menu />
       <FullFrom />
-    </div>
+    </Container>
   );
 };
 
