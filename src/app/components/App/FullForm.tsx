@@ -10,30 +10,40 @@ import './App.css';
 
 interface FormValues {
   name: string;
+  email: string;
   position: string;
+  carModel: string;
+  year: number;
+  engineCapacity: number;
+  VIN: string;
 }
 
 const initialValues: FormValues = {
   name: '',
-  position: ''
+  position: '',
+  email: '',
+  carModel: '',
+  year: 0,
+  engineCapacity: 0,
+  VIN: ''
 };
 
 const positionItems: FormikSelectItem[] = [
   {
-    label: 'Front End',
-    value: 'front_end'
+    label: 'Change Oil',
+    value: 'change_oil'
   },
   {
-    label: 'Back End',
-    value: 'back_end'
+    label: 'Diagnosis',
+    value: 'diagnosis'
   },
   {
-    label: 'Dev Ops',
-    value: 'dev_ops'
+    label: 'Change Tire',
+    value: 'change_tire'
   },
   {
-    label: 'QA',
-    value: 'qa'
+    label: 'Change Bulb',
+    value: 'change_bulb'
   }
 ];
 
@@ -42,7 +52,7 @@ const SignupSchema = Yup.object().shape({
   position: Yup.string().required('Required')
 });
 
-const App: React.FC = () => {
+const FullForm: React.FC = () => {
   const handleSubmit = (values: FormValues): void => {
     alert(JSON.stringify(values));
   };
@@ -58,10 +68,20 @@ const App: React.FC = () => {
           return (
             <Form>
               <FormikField name="name" label="Name" required />
+              <FormikField name="email" label="Email" required />
+              <FormikField name="carModel" label="Car Model" required />
+              <FormikField name="year" label="Year" required />
+              <FormikField
+                name="engineCapacity"
+                label="Engine Capacity"
+                required
+              />
+              <FormikField name="VIN" label="VIN" required />
+
               <FormikSelect
                 name="position"
                 items={positionItems}
-                label="Position"
+                label="Choose Repair"
                 required
               />
 
@@ -80,4 +100,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default FullForm;
