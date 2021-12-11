@@ -1,14 +1,15 @@
 import React from 'react';
-import Button from './button_style';
-import Stack from './stack_style';
+// import  from './menu_style';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 export default function Menu() {
   return (
-    <Stack className="menu_stack">
-      <Button type="button">Login</Button>
-      <Button type="button">Register</Button>
-      <Button type="button">Contact</Button>
-      <Button type="button">About Us</Button>
-    </Stack>
+    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+      <Button>Login</Button>
+      <Button>Register</Button>
+      <Button>Contact</Button>
+      <Button>About Us</Button>
+    </ButtonGroup>
   );
 }
