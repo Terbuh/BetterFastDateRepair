@@ -6,7 +6,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-import './FormikSelect.css';
+import FormikWrapper from './formik_style';
 
 export interface FormikSelectItem {
   label: string;
@@ -55,7 +55,7 @@ const FormikSelect: React.FC<FormikSelectProps> = ({
   required = false
 }) => {
   return (
-    <div className="FormikSelect">
+    <FormikWrapper>
       <Field
         name={name}
         as={MaterialUISelectField}
@@ -68,7 +68,7 @@ const FormikSelect: React.FC<FormikSelectProps> = ({
           </MenuItem>
         ))}
       </Field>
-    </div>
+    </FormikWrapper>
   );
 };
 

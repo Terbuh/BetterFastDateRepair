@@ -1,3 +1,5 @@
+import { url } from 'inspector';
+
 const services: {
   id: number;
   name: string;
@@ -5,7 +7,13 @@ const services: {
   open: string;
   spec: string;
 }[] = [
-  { id: 0, name: 'BMW', email: 'bmw@gmail.com', open: '8-16', spec: 'Bmw' },
+  {
+    id: 0,
+    name: 'BMW',
+    email: 'bmw@gmail.com',
+    open: '8-16',
+    spec: 'Bmw'
+  },
   { id: 1, name: 'VW', email: 'vw@gmail.com', open: '8-16', spec: 'VW' },
   {
     id: 2,

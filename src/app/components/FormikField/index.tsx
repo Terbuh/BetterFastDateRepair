@@ -2,7 +2,7 @@ import React from 'react';
 import { ErrorMessage, Field } from 'formik';
 import TextField from '@material-ui/core/TextField';
 
-import './FormikField.css';
+import FormikDiv from './formik_field_style';
 
 interface FormikFieldProps {
   name: string;
@@ -18,7 +18,7 @@ const FormikField: React.FC<FormikFieldProps> = ({
   required = false
 }) => {
   return (
-    <div className="FormikField">
+    <FormikDiv>
       <Field
         required={required}
         autoComplete="off"
@@ -29,7 +29,7 @@ const FormikField: React.FC<FormikFieldProps> = ({
         type={type}
         helperText={<ErrorMessage name={name} />}
       />
-    </div>
+    </FormikDiv>
   );
 };
 

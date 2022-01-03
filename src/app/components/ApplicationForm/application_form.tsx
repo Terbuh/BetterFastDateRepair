@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import FormikField from '../FormikField';
 import FormikSelect, { FormikSelectItem } from '../FormikSelect';
 
-import './App.css';
+import FormWrapper from './aplication_form_styles';
 
 interface FormValues {
   name: string;
@@ -52,13 +52,13 @@ const SignupSchema = Yup.object().shape({
   position: Yup.string().required('Required')
 });
 
-const ApplicationForm: React.FC = () => {
+const Application_form: React.FC = () => {
   const handleSubmit = (values: FormValues): void => {
     alert(JSON.stringify(values));
   };
 
   return (
-    <div className="App">
+    <FormWrapper>
       <h1>Sign Up</h1>
       <Formik
         initialValues={initialValues}
@@ -96,8 +96,8 @@ const ApplicationForm: React.FC = () => {
           );
         }}
       </Formik>
-    </div>
+    </FormWrapper>
   );
 };
 
-export default ApplicationForm;
+export default Application_form;
