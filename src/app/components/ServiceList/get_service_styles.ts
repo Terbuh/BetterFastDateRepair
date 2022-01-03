@@ -6,4 +6,17 @@ const RenderList = styled.div`
   overflow-y: scroll;
 `;
 
-export default RenderList;
+const Table = styled.table`
+  background-color: rgba(195, 195, 195, 0.8);
+  width: 100%;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Logo = styled.image`
+  width: 30%;
+`;
+
+export { RenderList, Table, Logo };
