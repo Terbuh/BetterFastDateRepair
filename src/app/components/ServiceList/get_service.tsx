@@ -8,7 +8,7 @@ function RenderService() {
     <RenderList>
       {services.map((item) => (
         <div>
-          <Logo></Logo>
+          <Logo>{item.logo}</Logo>
           <Table>
             <th>{item.name}</th>
             <td>Main specialization in - {item.spec}</td>
