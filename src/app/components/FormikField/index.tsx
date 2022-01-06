@@ -2,7 +2,7 @@ import React from 'react';
 import { ErrorMessage, Field } from 'formik';
 import TextField from '@material-ui/core/TextField';
 
-import FormikDiv from './formik_field_style';
+import FormikDiv from './formikField.style';
 
 interface FormikFieldProps {
   name: string;

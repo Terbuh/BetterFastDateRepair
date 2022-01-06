@@ -6,7 +6,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-import FormikWrapper from './formik_style';
+import FormikWrapper from './formik.style';
 
 export interface FormikSelectItem {
   label: string;

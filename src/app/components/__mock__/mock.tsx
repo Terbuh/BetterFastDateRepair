@@ -1,20 +1,24 @@
-import vw from 'src/assets/logo/vw.png';
+import React from 'react';
+import { ReactComponent as Bmw } from '../../../assets/logo/BMW.svg';
+import { ReactComponent as Vw } from '../../../assets/logo/VW.svg';
+import { ReactComponent as Volvo } from '../../../assets/logo/VOLVO.svg';
+import { ReactComponent as Renault } from '../../../assets/logo/RENAULT.svg';
+import { ReactComponent as Skoda } from '../../../assets/logo/SKODA.svg';
+import { ReactComponent as Audi } from '../../../assets/logo/AUDI.svg';
+import { ReactComponent as Pontiac } from '../../../assets/logo/PONTIAC.svg';
+import { ReactComponent as Madacar } from '../../../assets/logo/MADACAR.svg';
+import { ReactComponent as Kosik } from '../../../assets/logo/KOSIK.svg';
+import { ReactComponent as Tomi } from '../../../assets/logo/TOMI.svg';
+import servicesType from '../../types/service.type';
 
-const services: {
-  id: number;
-  name: string;
-  email: string;
-  open: string;
-  spec: string;
-  logo: any;
-}[] = [
+const services = [
   {
     id: 0,
     name: 'BMW',
     email: 'bmw@gmail.com',
     open: '8-16',
     spec: 'Bmw',
-    logo: { vw }
+    icon: Bmw
   },
   {
     id: 1,
@@ -22,7 +26,7 @@ const services: {
     email: 'vw@gmail.com',
     open: '8-16',
     spec: 'VW',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Vw
   },
   {
     id: 2,
@@ -30,7 +34,7 @@ const services: {
     email: 'volvo@gmail.com',
     open: '8-21',
     spec: 'Volvo',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Volvo
   },
   {
     id: 3,
@@ -38,7 +42,7 @@ const services: {
     email: 'renault@gmail.com',
     open: '8-16',
     spec: 'Renault',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Renault
   },
   {
     id: 4,
@@ -46,7 +50,7 @@ const services: {
     email: 'skoda@gmail.com',
     open: '8-16',
     spec: 'Skoda',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Skoda
   },
   {
     id: 5,
@@ -54,7 +58,7 @@ const services: {
     email: 'audi@gmail.com',
     open: '8-16',
     spec: 'Audi',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Audi
   },
   {
     id: 6,
@@ -62,7 +66,7 @@ const services: {
     email: 'pontiac@gmail.com',
     open: '8-16',
     spec: 'Pontiac',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Pontiac
   },
   {
     id: 7,
@@ -70,7 +74,7 @@ const services: {
     email: 'madacar@gmail.com',
     open: '8-18',
     spec: 'American-Cars',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Madacar
   },
   {
     id: 8,
@@ -78,7 +82,7 @@ const services: {
     email: 'autokosik@gmail.com',
     open: '8-17',
     spec: 'Europe cars',
-    logo: '/src/assets/logo/Tomi.png'
+    icon: Kosik
   },
   {
     id: 9,
@@ -86,7 +90,8 @@ const services: {
     email: 'tomi@gmail.com',
     open: '8-16',
     spec: 'All cars',
-    logo: '../../../assets/logo/Tomi.png'
+    icon: Tomi
   }
 ];
+
 export default services;
