@@ -1,7 +1,4 @@
-const imgArray = [];
-
-imgArray[0] = new Image();
-imgArray[0].src = '../../../assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png';
+import vw from 'src/assets/logo/vw.png';
 
 const services: {
   id: number;
@@ -17,7 +14,7 @@ const services: {
     email: 'bmw@gmail.com',
     open: '8-16',
     spec: 'Bmw',
-    logo: imgArray[0].src
+    logo: { vw }
   },
   {
     id: 1,
@@ -25,7 +22,7 @@ const services: {
     email: 'vw@gmail.com',
     open: '8-16',
     spec: 'VW',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 2,
@@ -33,7 +30,7 @@ const services: {
     email: 'volvo@gmail.com',
     open: '8-21',
     spec: 'Volvo',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 3,
@@ -41,7 +38,7 @@ const services: {
     email: 'renault@gmail.com',
     open: '8-16',
     spec: 'Renault',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 4,
@@ -49,7 +46,7 @@ const services: {
     email: 'skoda@gmail.com',
     open: '8-16',
     spec: 'Skoda',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 5,
@@ -57,7 +54,7 @@ const services: {
     email: 'audi@gmail.com',
     open: '8-16',
     spec: 'Audi',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 6,
@@ -65,7 +62,7 @@ const services: {
     email: 'pontiac@gmail.com',
     open: '8-16',
     spec: 'Pontiac',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 7,
@@ -73,7 +70,7 @@ const services: {
     email: 'madacar@gmail.com',
     open: '8-18',
     spec: 'American-Cars',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 8,
@@ -81,7 +78,7 @@ const services: {
     email: 'autokosik@gmail.com',
     open: '8-17',
     spec: 'Europe cars',
-    logo: '/src/assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '/src/assets/logo/Tomi.png'
   },
   {
     id: 9,
@@ -89,7 +86,7 @@ const services: {
     email: 'tomi@gmail.com',
     open: '8-16',
     spec: 'All cars',
-    logo: '../../../assets/Logos/Autoklinika-Tomi-Serwis-Gdansk.png'
+    logo: '../../../assets/logo/Tomi.png'
   }
 ];
 export default services;
