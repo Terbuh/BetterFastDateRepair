@@ -11,9 +11,8 @@ function Service() {
           <Logo>{React.createElement(item.icon)}</Logo>
           <ListItem>{item.name}</ListItem>
           <ListItem>Main specialization in - {item.spec}</ListItem>
-          <ListItem>Service is open at - {item.open}</ListItem>
+          <ListItem>Service is open at: {item.open}</ListItem>
           <ListItem>Email to contact with service - {item.email}</ListItem>
-          {/*<Button variant="contained">Calendar</Button>*/}
         </ListItemButton>
       ))}
     </ListHeight>
