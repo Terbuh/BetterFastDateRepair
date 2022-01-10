@@ -5,4 +5,18 @@ const Container = styled.div`
     height: 100%;
   }
 `;
-export default Container;
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const WebLogo = styled.div`
+  height: 100px;
+  width: 100px;
+  margin-left: 15px;
+  margin-top: 10px;
+  background-color: blue;
+`;
+
+export { Container, Header, WebLogo };
