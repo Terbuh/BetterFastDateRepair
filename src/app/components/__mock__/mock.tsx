@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Bmw } from '../../../assets/logo/BMW.svg';
 import { ReactComponent as Vw } from '../../../assets/logo/VW.svg';
 import { ReactComponent as Volvo } from '../../../assets/logo/VOLVO.svg';
@@ -11,7 +10,7 @@ import { ReactComponent as Kosik } from '../../../assets/logo/KOSIK.svg';
 import { ReactComponent as Tomi } from '../../../assets/logo/TOMI.svg';
 import servicesType from '../../types/service.type';
 
-const services = [
+const services: servicesType[] = [
   {
     id: 0,
     name: 'BMW',
