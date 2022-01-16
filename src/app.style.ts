@@ -19,4 +19,9 @@ const WebLogo = styled.div`
   background-color: blue;
 `;
 
-export { Container, Header, WebLogo };
+const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export { Container, Header, WebLogo, Content };

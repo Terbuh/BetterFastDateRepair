@@ -1,9 +1,9 @@
 import React from 'react';
 //import FullFrom from './app/components/ApplicationForm/application_form';
-import Menu from './app/components/Menu/menu';
-import { Container, Header, WebLogo } from './app.style';
-import Service from './app/components/ServiceList/service';
-import Map from './app/components/Map/map';
+import { Menu } from './app/components/Menu/menu';
+import { Container, Header, WebLogo, Content } from './app.style';
+import { Service } from './app/components/ServiceList/service';
+import { Map } from './app/components/Map/map';
 
 const App: React.FC = () => {
   return (
@@ -12,8 +12,10 @@ const App: React.FC = () => {
         <WebLogo>Logo</WebLogo>
         <Menu />
       </Header>
-      <Map />
-      <Service />
+      <Content>
+        <Service />
+        <Map />
+      </Content>
 
       {/*//<FullFrom />*/}
     </Container>
