@@ -1,25 +1,11 @@
 import React from 'react';
-import services from '../__mock__/mock';
-import { ListHeight, Logo } from './service.styles';
-import { Button, ListItem, ListItemButton } from '@mui/material';
+import { ServiceList } from './serviceList';
 
-function Service() {
-  return (
-    <ListHeight>
-      {services.map((item) => (
-        <ListItemButton>
-          <Logo>{React.createElement(item.icon)}</Logo>
-          <ListItem>{item.name}</ListItem>
-          <ListItem>Main specialization in - {item.spec}</ListItem>
-          <ListItem>Service is open at: {item.open}</ListItem>
-          <ListItem>Email to contact with service - {item.email}</ListItem>
-        </ListItemButton>
-      ))}
-    </ListHeight>
-  );
+function Service(): JSX.Element {
+  return <ServiceList></ServiceList>;
 }
 
-export default Service;
+export { Service };
 
 // const RenderService = async () => {
 //   let template = '';
