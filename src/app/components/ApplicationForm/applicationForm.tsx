@@ -3,8 +3,8 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import Button from '@material-ui/core/Button';
 
-import FormikField from '../FormikField';
-import FormikSelect, { FormikSelectItem } from '../FormikSelect';
+import { FormikField } from '../FormikField';
+import { FormikSelect, FormikSelectItem } from '../FormikSelect';
 
 import FormWrapper from './aplicationForm.styles';
 
@@ -100,4 +100,4 @@ const ApplicationForm: React.FC = () => {
   );
 };
 
-export default ApplicationForm;
+export { ApplicationForm };

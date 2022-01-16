@@ -2,7 +2,7 @@ import React from 'react';
 import { ErrorMessage, Field } from 'formik';
 import TextField from '@material-ui/core/TextField';
 
-import FormikDiv from './formikField.style';
+import FormikDiv from './formikField.styles';
 
 interface FormikFieldProps {
   name: string;
@@ -33,4 +33,4 @@ const FormikField: React.FC<FormikFieldProps> = ({
   );
 };
 
-export default FormikField;
+export { FormikField };

@@ -1,9 +1,9 @@
 import React from 'react';
-import ButtonGroupWrapper from './menu.style';
+import ButtonGroupWrapper from './menu.styles';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 
-export default function Menu() {
+function Menu(): JSX.Element {
   return (
     <ButtonGroupWrapper>
       <ButtonGroup
@@ -17,3 +17,4 @@ export default function Menu() {
     </ButtonGroupWrapper>
   );
 }
+export { Menu };
