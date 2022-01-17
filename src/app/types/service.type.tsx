@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface servicesType {
+export interface serviceType {
   id: number;
   name: string;
   email: string;
@@ -8,4 +8,3 @@ interface servicesType {
   spec: string;
   icon: React.FunctionComponent;
 }
-export default servicesType;

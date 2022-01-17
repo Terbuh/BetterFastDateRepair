@@ -8,9 +8,9 @@ import { ReactComponent as Pontiac } from '../../../assets/logo/PONTIAC.svg';
 import { ReactComponent as Madacar } from '../../../assets/logo/MADACAR.svg';
 import { ReactComponent as Kosik } from '../../../assets/logo/KOSIK.svg';
 import { ReactComponent as Tomi } from '../../../assets/logo/TOMI.svg';
-import servicesType from '../../types/service.type';
+import { serviceType } from '../../types/service.type';
 
-const services: servicesType[] = [
+const services: serviceType[] = [
   {
     id: 0,
     name: 'BMW',

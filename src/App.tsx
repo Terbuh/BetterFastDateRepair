@@ -5,7 +5,7 @@ import { Container, Header, WebLogo, Content } from './app.style';
 import { Service } from './app/components/ServiceList/service';
 import { Map } from './app/components/Map/map';
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
     <Container>
       <Header>
@@ -21,5 +21,3 @@ const App: React.FC = () => {
     </Container>
   );
 };
-
-export default App;
