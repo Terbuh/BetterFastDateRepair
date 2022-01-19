@@ -2,7 +2,7 @@ import React from 'react';
 //import FullFrom from './app/components/ApplicationForm/application_form';
 import { Menu } from './app/components/Menu/menu';
 import { Container, Header, WebLogo, Content } from './app.style';
-import { Service } from './app/components/ServiceList/service';
+import { ServiceList } from './app/components/ServiceList/serviceList';
 import { Map } from './app/components/Map/map';
 
 export const App: React.FC = () => {
@@ -13,7 +13,7 @@ export const App: React.FC = () => {
         <Menu />
       </Header>
       <Content>
-        <Service />
+        <ServiceList />
         <Map />
       </Content>
 
