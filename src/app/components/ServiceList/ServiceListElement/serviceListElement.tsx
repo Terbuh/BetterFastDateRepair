@@ -1,9 +1,9 @@
 import React from 'react';
-import { serviceType } from '../../../types/service.type';
 import { Logo } from '../service.styles';
 import { ListItem, ListItemButton } from '@mui/material';
+import { serviceType } from '../../../types/service.type';
 
-export const ServiceListElement: React.FC = () => {
+export function ServiceListElement(serviceData: serviceType) {
   return (
     <ListItemButton>
       <Logo>{React.createElement(serviceData.icon)}</Logo>
@@ -13,6 +13,6 @@ export const ServiceListElement: React.FC = () => {
       <ListItem>Email to contact with service - {serviceData.email}</ListItem>
     </ListItemButton>
   );
-};
+}
 // przekazac w prospie serviceData
 //
