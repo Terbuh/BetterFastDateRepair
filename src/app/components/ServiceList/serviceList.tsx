@@ -7,10 +7,15 @@ export function ServiceList(): JSX.Element {
   return (
     <ListHeight>
       {services.map((serviceData) => (
-        <ServiceListElement {serviceData}/>
+        <ServiceListElement
+          name={serviceData.name}
+          icon={serviceData.icon}
+          email={serviceData.email}
+          open={serviceData.open}
+          spec={serviceData.spec}
+          id={serviceData.id}
+        />
       ))}
     </ListHeight>
   );
 }
-
-// export { ServiceList };
