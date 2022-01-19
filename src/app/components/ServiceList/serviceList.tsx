@@ -6,8 +6,8 @@ import { ServiceListElement } from './ServiceListElement/serviceListElement';
 export function ServiceList(): JSX.Element {
   return (
     <ListHeight>
-      {services.map((item) => (
-        <ServiceListElement />
+      {services.map((serviceData) => (
+        <ServiceListElement {serviceData}/>
       ))}
     </ListHeight>
   );
