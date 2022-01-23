@@ -3,7 +3,7 @@ import { Logo } from '../service.styles';
 import { ListItem, ListItemButton } from '@mui/material';
 import { serviceType } from '../../../types/service.type';
 
-export function ServiceListElement(serviceData: serviceType) {
+export function ServiceListElement(serviceData: serviceType): JSX.Element {
   return (
     <ListItemButton>
       <Logo>{React.createElement(serviceData.icon)}</Logo>
@@ -14,5 +14,3 @@ export function ServiceListElement(serviceData: serviceType) {
     </ListItemButton>
   );
 }
-// przekazac w prospie serviceData
-//
