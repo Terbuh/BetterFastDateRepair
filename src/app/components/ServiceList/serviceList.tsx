@@ -8,12 +8,13 @@ export function ServiceList(): JSX.Element {
     <ListHeight>
       {services.map((serviceData) => (
         <ServiceListElement
-          name={serviceData.name}
-          icon={serviceData.icon}
-          email={serviceData.email}
-          open={serviceData.open}
-          spec={serviceData.spec}
-          id={serviceData.id}
+          // name={serviceData.name}
+          // icon={serviceData.icon}
+          // email={serviceData.email}
+          // open={serviceData.open}
+          // spec={serviceData.spec}
+          // id={serviceData.id}
+          {...serviceData}
         />
       ))}
     </ListHeight>
