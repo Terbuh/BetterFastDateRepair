@@ -22,6 +22,7 @@ const WebLogo = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: row;
+  width: 100%;
 `;
 
 export { Container, Header, WebLogo, Content };
