@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MapContainer } from 'react-leaflet';
 
 const MapWrapper = styled.div`
   width: 50%;
@@ -7,4 +8,8 @@ const MapWrapper = styled.div`
   background-color: black;
 `;
 
-export { MapWrapper };
+const MyMapContainer = styled(MapContainer)`
+  height: 800px;
+`;
+
+export { MapWrapper, MyMapContainer };
