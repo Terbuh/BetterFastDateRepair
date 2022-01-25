@@ -2,7 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { MapWrapper } from './map.styles';
 
-export function Map(): JSX.Element {
+export const Map: React.FC = () => {
   return (
     <MapWrapper>
       <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
@@ -18,4 +18,4 @@ export function Map(): JSX.Element {
       </MapContainer>
     </MapWrapper>
   );
-}
+};
