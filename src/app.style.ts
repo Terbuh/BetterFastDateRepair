@@ -8,7 +8,8 @@ const Container = styled.div`
 
 const Header = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  height: 80px;
 `;
 
 const WebLogo = styled.div`
