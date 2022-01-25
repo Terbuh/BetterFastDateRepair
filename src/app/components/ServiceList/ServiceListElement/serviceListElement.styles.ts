@@ -7,15 +7,8 @@ const MyListItem = styled(ListItem)`&&& {
 
 const MyListItemButton = styled(ListItemButton)`
   &&& {
-    border: 1px solid black;
-    display: flex;
-    align-content: space-around;
-    
-    &:hover {
-      border: 1px solid blue;
-      transition: border 0.5s;
-      
-      
+    margin-bottom: 10px;
+    background-color: #ffffff;
   }
 `;
 
