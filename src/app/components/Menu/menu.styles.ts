@@ -1,38 +1,92 @@
 import styled from 'styled-components';
 
 const ButtonGroupWrapper = styled.div`
-  height: 30px;
-  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid grey;
 `;
 
-const Button = styled.button` position: relative;
-  display: inline-block;
-  padding: 15px 50px;
-  border-radius: 4px;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  margin: 25px;
-  font-family: "Roboto", sans-serif;
-  filter: hue-rotate(0deg);
-  border: 2px solid black;
-  transition: all 0.1s linear;
+const Button = styled.button`
+   {
+    margin: 5px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
 
-  &:hover {
-    border: 1px solid blue;
-    span {
-      position: absolute;
-      display: block;
+  :before {
+    content: '';
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
 
-      &:nth-child(1) {
-        filter: hue-rotate(0deg);
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background: linear-gradient(90deg, transparent, #3a86ff);
-        animation: animate1 1s linear infinite;
-      }`;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  :active {
+    color: #000;
+  }
+
+  :active:after {
+    background: transparent;
+  }
+
+  :hover:before {
+    opacity: 1;
+  }
+
+  :after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+`;
 
 export { ButtonGroupWrapper, Button };

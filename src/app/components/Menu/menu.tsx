@@ -13,6 +13,7 @@ export const Menu: React.FC = () => {
       <Button>Register</Button>
       <Button>Contact</Button>
       <Button>About Us</Button>
+
       {/*</ButtonGroup>*/}
     </ButtonGroupWrapper>
   );
