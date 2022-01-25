@@ -11,7 +11,7 @@ const ListHeight = styled.div`
   background-color: rgba(197, 196, 195, 0.37);
 `;
 
-const Logo = styled.image`
+const Logo = styled.div`
   width: 30%;
 `;
 

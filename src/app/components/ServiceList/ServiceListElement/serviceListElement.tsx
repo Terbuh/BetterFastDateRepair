@@ -1,16 +1,27 @@
 import React from 'react';
 import { Logo } from '../service.styles';
-import { ListItem, ListItemButton } from '@mui/material';
 import { serviceType } from '../../../types/service.type';
+import {
+  MyListItem,
+  MyListItemButton,
+  MyP,
+  MyItemFlex
+} from './serviceListElement.styles';
 
-export function ServiceListElement(serviceData: serviceType): JSX.Element {
+export const ServiceListElement = (serviceData: serviceType): JSX.Element => {
   return (
-    <ListItemButton>
+    <MyListItemButton>
       <Logo>{React.createElement(serviceData.icon)}</Logo>
-      <ListItem>{serviceData.name}</ListItem>
-      <ListItem>Main specialization in - {serviceData.spec}</ListItem>
-      <ListItem>Service is open at: {serviceData.open}</ListItem>
-      <ListItem>Email to contact with service - {serviceData.email}</ListItem>
-    </ListItemButton>
+      <MyListItem>
+        <h2>{serviceData.name}</h2>
+      </MyListItem>
+      <MyItemFlex>
+        Main specialization in - <MyP>{serviceData.spec}</MyP>
+      </MyItemFlex>
+      <MyListItem>Service is open at: {serviceData.open}</MyListItem>
+      <MyItemFlex>
+        Email to contact: <MyP>{serviceData.email}</MyP>
+      </MyItemFlex>
+    </MyListItemButton>
   );
-}
+};
