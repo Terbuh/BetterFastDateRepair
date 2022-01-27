@@ -6,6 +6,7 @@ const ButtonGroupWrapper = styled.div`
   width: 100%;
   justify-content: center;
   border-bottom: 1px solid grey;
+  background-color: rgba(197, 196, 195, 0.37);
 `;
 
 const Button = styled.button`

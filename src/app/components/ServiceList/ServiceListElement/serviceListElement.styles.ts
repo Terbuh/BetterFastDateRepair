@@ -3,12 +3,18 @@ import { ListItem, ListItemButton } from '@mui/material';
 
 const MyListItem = styled(ListItem)`&&& {
   display: flex;
-  justify-content: center`;
+  justify-content: center;
+`;
 
 const MyListItemButton = styled(ListItemButton)`
   &&& {
     margin-bottom: 10px;
     background-color: #ffffff;
+    border-radius: 30%;
+    :hover {
+      transition-duration: 0.3s;
+      background-color: #9f9f9f;
+    }
   }
 `;
 
