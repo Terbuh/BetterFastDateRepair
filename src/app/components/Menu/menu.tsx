@@ -1,20 +1,26 @@
 import React from 'react';
 import { ButtonGroupWrapper, Button } from './menu.styles';
-//import Button from '@mui/material/Button';
-//import ButtonGroup from '@mui/material/ButtonGroup';
+import { Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
+//import { Route } from 'react-router';
 
 export const Menu: React.FC = () => {
   return (
     <ButtonGroupWrapper>
-      {/*<ButtonGroup*/}
-      {/*  variant="contained"*/}
-      {/*  aria-label="outlined primary button group">*/}
-      <Button>Login</Button>
-      <Button>Register</Button>
-      <Button>Contact</Button>
-      <Button>About Us</Button>
-
-      {/*</ButtonGroup>*/}
+      <Routes>
+        <Route path="/login">
+          <Button>Login</Button>
+        </Route>
+        <Route path="/register">
+          <Button>Register</Button>
+        </Route>
+        <Route path="/contact">
+          <Button>Contact</Button>
+        </Route>
+        <Route path="/aboutUs">
+          <Button>AboutUs</Button>
+        </Route>
+      </Routes>
     </ButtonGroupWrapper>
   );
 };
