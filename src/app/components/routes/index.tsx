@@ -4,8 +4,9 @@ import { AboutUs } from '../AboutUs/aboutUs';
 import { Register } from '../Register/register';
 import { Login } from '../Login/login';
 import { Contact } from '../Contact/contact';
+import React from 'react';
 
-export function Router() {
+export const Router: React.FC = () => {
   return useRoutes([
     {
       path: '/',
@@ -28,4 +29,4 @@ export function Router() {
       element: <AboutUs />
     }
   ]);
-}
+};
