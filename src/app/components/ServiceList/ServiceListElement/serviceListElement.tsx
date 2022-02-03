@@ -1,5 +1,6 @@
 import React from 'react';
 import { Logo } from '../service.styles';
+import { PATH_PAGE } from '../../Routes/paths';
 import { serviceType } from '../../../types/service.type';
 import {
   MyListItem,
@@ -11,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 export const ServiceListElement = (serviceData: serviceType): JSX.Element => {
   return (
-    <Link to="/services/${service.id}">
+    <Link to={PATH_PAGE.details}>
       <MyListItemButton>
         <Logo>{React.createElement(serviceData.icon)}</Logo>
         <MyListItem>
