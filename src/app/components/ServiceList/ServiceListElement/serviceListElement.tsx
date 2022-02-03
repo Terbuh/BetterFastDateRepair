@@ -1,6 +1,5 @@
 import React from 'react';
 import { Logo } from '../service.styles';
-import { PATH_PAGE } from '../../Routes/paths';
 import { serviceType } from '../../../types/service.type';
 import {
   MyListItem,
@@ -10,9 +9,15 @@ import {
 } from './serviceListElement.styles';
 import { Link } from 'react-router-dom';
 
-export const ServiceListElement = (serviceData: serviceType): JSX.Element => {
+interface ServiceListElementProps {
+  serviceData: serviceType;
+}
+
+export const ServiceListElement = ({
+  serviceData
+}: ServiceListElementProps): JSX.Element => {
   return (
-    <Link to={PATH_PAGE.details}>
+    <Link to={`/services/${serviceData.id}`}>
       <MyListItemButton>
         <Logo>{React.createElement(serviceData.icon)}</Logo>
         <MyListItem>

@@ -7,7 +7,7 @@ export const ServiceList: React.FC = () => {
   return (
     <ListHeight>
       {services.map((serviceData) => (
-        <ServiceListElement {...serviceData} key={serviceData.id} />
+        <ServiceListElement serviceData={serviceData} key={serviceData.id} />
       ))}
     </ListHeight>
   );
