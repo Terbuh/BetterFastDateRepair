@@ -1,32 +1,39 @@
+import React from 'react';
 import { useRoutes } from 'react-router-dom';
 import { Home } from '../Home/home';
 import { AboutUs } from '../AboutUs/aboutUs';
 import { Register } from '../Register/register';
 import { Login } from '../Login/login';
 import { Contact } from '../Contact/contact';
-import React from 'react';
+import { PATH_PAGE } from './paths';
+import { ServiceDetails } from '../ServiceDetails/serviceDetails';
+import { ServiceListElement } from './../ServiceList/ServiceListElement/serviceListElement';
 
 export const Router: React.FC = () => {
   return useRoutes([
     {
-      path: '/',
+      path: PATH_PAGE.root,
       element: <Home />
     },
     {
-      path: '/login',
+      path: PATH_PAGE.login,
       element: <Login />
     },
     {
-      path: '/register',
+      path: PATH_PAGE.register,
       element: <Register />
     },
     {
-      path: '/contact',
+      path: PATH_PAGE.contact,
       element: <Contact />
     },
     {
-      path: '/aboutUs',
+      path: PATH_PAGE.aboutUs,
       element: <AboutUs />
+    },
+    {
+      path: 'ServiceListElement:id',
+      element: <ServiceDetails />
     }
   ]);
 };
