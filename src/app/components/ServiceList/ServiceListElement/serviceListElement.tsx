@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 export const ServiceListElement = (serviceData: serviceType): JSX.Element => {
   return (
-    <Link to="ServiceListElement:id">
+    <Link to="/services/${service.id}">
       <MyListItemButton>
         <Logo>{React.createElement(serviceData.icon)}</Logo>
         <MyListItem>

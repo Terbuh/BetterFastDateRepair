@@ -3,5 +3,6 @@ export const PATH_PAGE = {
   login: '/login',
   register: '/register',
   contact: '/contact',
-  aboutUs: '/aboutUs'
+  aboutUs: '/aboutUs',
+  details: /services/${service.id}
 };

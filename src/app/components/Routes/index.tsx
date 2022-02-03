@@ -7,7 +7,6 @@ import { Login } from '../Login/login';
 import { Contact } from '../Contact/contact';
 import { PATH_PAGE } from './paths';
 import { ServiceDetails } from '../ServiceDetails/serviceDetails';
-import { ServiceListElement } from './../ServiceList/ServiceListElement/serviceListElement';
 
 export const Router: React.FC = () => {
   return useRoutes([
@@ -32,7 +31,7 @@ export const Router: React.FC = () => {
       element: <AboutUs />
     },
     {
-      path: 'ServiceListElement:id',
+      path: PATH_PAGE.details,
       element: <ServiceDetails />
     }
   ]);
