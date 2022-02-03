@@ -4,5 +4,5 @@ export const PATH_PAGE = {
   register: '/register',
   contact: '/contact',
   aboutUs: '/aboutUs',
-  details: /services/${service.id}
+  details: '/services/${service.id}'
 };
