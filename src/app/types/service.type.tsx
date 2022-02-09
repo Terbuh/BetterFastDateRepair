@@ -7,4 +7,5 @@ export interface serviceType {
   open: string;
   spec: string;
   icon: React.FunctionComponent;
+  description: string;
 }

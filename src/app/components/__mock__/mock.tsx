@@ -17,7 +17,9 @@ const services: serviceType[] = [
     email: 'bmw@gmail.com',
     open: '8-16',
     spec: 'Bmw',
-    icon: Bmw
+    icon: Bmw,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 1,
@@ -25,7 +27,9 @@ const services: serviceType[] = [
     email: 'vw@gmail.com',
     open: '8-16',
     spec: 'VW',
-    icon: Vw
+    icon: Vw,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 2,
@@ -33,7 +37,9 @@ const services: serviceType[] = [
     email: 'volvo@gmail.com',
     open: '8-21',
     spec: 'Volvo',
-    icon: Volvo
+    icon: Volvo,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 3,
@@ -41,7 +47,9 @@ const services: serviceType[] = [
     email: 'renault@gmail.com',
     open: '8-16',
     spec: 'Renault',
-    icon: Renault
+    icon: Renault,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 4,
@@ -49,7 +57,9 @@ const services: serviceType[] = [
     email: 'skoda@gmail.com',
     open: '8-16',
     spec: 'Skoda',
-    icon: Skoda
+    icon: Skoda,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 5,
@@ -57,7 +67,9 @@ const services: serviceType[] = [
     email: 'audi@gmail.com',
     open: '8-16',
     spec: 'Audi',
-    icon: Audi
+    icon: Audi,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 6,
@@ -65,7 +77,9 @@ const services: serviceType[] = [
     email: 'pontiac@gmail.com',
     open: '8-16',
     spec: 'Pontiac',
-    icon: Pontiac
+    icon: Pontiac,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 7,
@@ -73,7 +87,9 @@ const services: serviceType[] = [
     email: 'madacar@gmail.com',
     open: '8-18',
     spec: 'American-Cars',
-    icon: Madacar
+    icon: Madacar,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 8,
@@ -81,7 +97,9 @@ const services: serviceType[] = [
     email: 'autokosik@gmail.com',
     open: '8-17',
     spec: 'Europe cars',
-    icon: Kosik
+    icon: Kosik,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   },
   {
     id: 9,
@@ -89,7 +107,9 @@ const services: serviceType[] = [
     email: 'tomi@gmail.com',
     open: '8-16',
     spec: 'All cars',
-    icon: Tomi
+    icon: Tomi,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus porttitor ornare. Morbi diam augue, finibus et vestibulum eget, congue id sem. Fusce id elementum urna. Suspendisse et dictum est. Nam justo erat, efficitur ac dictum vitae, lobortis sit amet arcu. Ut vitae risus nec odio scelerisque molestie et vitae ipsum.'
   }
 ];
 
