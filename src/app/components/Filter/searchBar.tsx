@@ -41,7 +41,7 @@ function Filter() {
         value={name}
         onChange={filter}
         className="input"
-        placeholder="Filter"
+        placeholder="Search service"
       />
 
       <div className="user-list">
