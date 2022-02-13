@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 import { ListItem, ListItemButton } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+const MyLink = styled(Link)`
+    text-decoration: none;
+  color: black;
+  }
+`;
 
 const MyListItem = styled(ListItem)`&&& {
   display: flex;
@@ -10,7 +17,7 @@ const MyListItemButton = styled(ListItemButton)`
   &&& {
     margin-bottom: 10px;
     background-color: #ffffff;
-    border-radius: 30%;
+    border-radius: 5%;
     :hover {
       transition-duration: 0.3s;
       background-color: #9f9f9f;
@@ -27,4 +34,4 @@ const MyItemFlex = styled(MyListItem)`
   flex-direction: column;
 `;
 
-export { MyListItem, MyListItemButton, MyP, MyItemFlex };
+export { MyListItem, MyListItemButton, MyP, MyItemFlex, MyLink };
