@@ -1,11 +1,4 @@
-import { ReactComponentElement, ReactElement } from 'react';
-import { serviceType } from '../../types/service.type';
-
-interface Dupa {
-  foundUsers: string;
-}
-
-export const SearchBar = ({ foundUsers, setFoundUsers }: Dupa) => (
+export const SearchBar = ({ foundUsers, setFoundUsers }) => (
   <form action="/" method="get">
     <label htmlFor="header-search">
       <span className="visually-hidden">Search blog posts</span>
